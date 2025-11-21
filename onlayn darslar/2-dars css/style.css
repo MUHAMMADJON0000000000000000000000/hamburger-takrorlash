@@ -1,0 +1,128 @@
+body , h1, h3{
+    margin:0;
+}
+.Bottom{
+    margin-top: 150px;
+}   
+.container{
+   
+    width: 70%;
+    margin: 0 auto;
+} 
+.clr{
+    clear: both;
+}
+.box-1{
+   background-color: rgb(222, 161, 135);
+ /*  padding-top: 20px;
+   padding-right: 25px;
+   padding-bottom: 30px;
+   padding-left: 35px;
+*/
+    padding: 20px 30px;
+    border: 3px solid red;
+    margin-top: 30px;
+   
+}
+.box-1 h1{
+    text-align: center;
+    text-decoration: underline;
+    font-family: sans-serif;
+    color: white;
+}
+.box-1 p{
+    color: white;
+}
+
+
+
+.box-2{
+    border: 2px dashed #555;
+    margin-top: 30px;
+    padding: 20px;
+}
+.box-2 h1 , .box-2 p{
+    color: #555;
+
+
+}
+.button{
+    background-color:#846363;
+    color: #fff;
+    font-size: 18px;
+    border: 1px soled #222;
+    padding:5px 15px ;
+    border-radius: 5px;
+
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color:#222; 
+
+}
+.box-3{
+    margin: 30px 0;
+    border: 2px solid #555;
+    padding: 20px;
+}
+.box-3 h1{
+    text-align: center ;
+    color: #555;
+    font-family: sans-serif;
+}
+.Catgory {
+    padding: 0;
+
+}
+.Catgory li{
+    list-style: none;
+    padding: 5px 0;
+    border-bottom: 1px solid #555;
+}
+.myForm{
+
+}
+.myForm label{
+    display: block;
+    font-size: 20px;
+    color: #555;
+}
+.myForm input, .myForm textarea {
+        margin: 8px 0;
+        padding: 5px;
+        /* display: block; */
+        width: 100%;
+}
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid #555;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.content{
+    float: left;
+    width: 70%;
+}
+.saidbar{
+    float: left;
+    width: 30%;
+    background-color: #333;
+    color: wheat;
+    box-sizing: border-box;
+    padding:0  10px;
+}
+.relative{
+    position: relative;
+    top: 30px;
+    width: 500px;
+    height: 400px;
+    background-image: url(photo_2025-02-03_23-59-14\ -\ Copy.jpg);
+    background-size: cover ;
+}
+.absalute{
+    position: absolute;
+    bottom: 0;
+}

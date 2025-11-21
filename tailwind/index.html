@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>taywin</title>
+    <link href="./src/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="min-h-screen bg-gray-50/50 p-4 border-dashed border-b-2 border-gray-300"
+    >
+      <header class="container mx-auto flex justify-between items-center py-4">
+        <div class="flex items-center space-x-8">
+          <img src="/path/to/worktap-logo.png" alt="Worktap Logo" class="h-8" />
+
+          <nav class="hidden lg:flex space-x-6 text-gray-700 text-sm">
+            <a href="#" class="hover:text-green-600 transition duration-150"
+              >Биржа</a
+            >
+            <a href="#" class="hover:text-green-600 transition duration-150"
+              >Ворки</a
+            >
+            <a href="#" class="hover:text-green-600 transition duration-150"
+              >Конкурсы</a
+            >
+            <a href="#" class="hover:text-green-600 transition duration-150"
+              >Создать ворк</a
+            >
+            <a href="#" class="hover:text-green-600 transition duration-150"
+              >Создать заказ</a
+            >
+          </nav>
+        </div>
+
+        <div class="flex items-center space-x-3">
+          <button
+            class="text-green-600 font-medium text-sm px-4 py-2 border border-transparent hover:border-green-600 rounded-md transition duration-150"
+          >
+            Регистрация
+          </button>
+          <button
+            class="bg-green-500 hover:bg-green-600 text-white font-medium text-sm px-4 py-2 rounded-md transition duration-150 shadow-md"
+          >
+            Войти
+          </button>
+        </div>
+      </header>
+
+      <hr
+        class="border-t border-dashed border-gray-300 my-4 container mx-auto"
+      />
+
+      <main class="container mx-auto pt-16 pb-24 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="space-y-8">
+            <h1
+              class="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight"
+            >
+              Покупайте фриланс-услуги
+              <span class="text-green-600">в два клика</span>
+            </h1>
+
+            <p class="text-gray-500 max-w-md">
+              Ворк — единица работы продавца, которую можно купить как товар в
+              магазине
+            </p>
+
+            <div class="flex items-center space-x-4">
+              <input
+                type="text"
+                placeholder="Что нужно сделать?"
+                class="flex-grow p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-400 focus:border-orange-400 transition duration-150 placeholder-gray-400 max-w-[350px]"
+              />
+              <button
+                class="bg-orange-400 hover:bg-orange-500 text-white font-medium px-6 py-3 rounded-lg shadow-md transition duration-150"
+              >
+                Найти
+              </button>
+            </div>
+
+            <div class="pt-6">
+              <h3 class="text-gray-600 mb-4">Выберите рубрику, чтобы начать</h3>
+              <div
+                class="grid grid-cols-2 sm:grid-cols-3 gap-y-3 text-sm text-gray-500"
+              >
+                <a href="#" class="hover:text-green-600">Тексты и переводы</a>
+                <a href="#" class="hover:text-green-600">Разработка</a>
+                <a href="#" class="hover:text-green-600">Дизайн</a>
+                <a href="#" class="hover:text-green-600">Аудио, видео монтаж</a>
+                <a href="#" class="hover:text-green-600">SEO и оптимизация</a>
+                <div class="hidden sm:block"></div>
+
+                <a href="#" class="hover:text-green-600">Бизнес и жизнь</a>
+                <a href="#" class="hover:text-green-600">Соцсети и реклама</a>
+                <button
+                  class="text-orange-400 border border-orange-400 hover:bg-orange-50 transition duration-150 text-xs px-3 py-1 rounded-full w-max"
+                >
+                  Все категории
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative hidden lg:block">
+            <img
+              src="./public/frlans man.png"
+              alt="Happy Freelancer"
+              class="absolute inset-0 w-full h-full object-contain z-10"
+            />
+
+            <div
+              class="absolute top-10 right-0 w-64 h-64 bg-orange-200/50 rounded-full blur-3xl opacity-30"
+            ></div>
+            <div
+              class="absolute bottom-10 left-1/4 w-40 h-40 bg-green-200/50 rounded-full blur-3xl opacity-30"
+            ></div>
+
+            <div
+              class="absolute bottom-10 right-4 p-4 bg-white rounded-xl shadow-2xl z-20"
+            >
+              <div class="flex space-x-1 text-yellow-400 text-xl">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span>★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="mx-auto p-25">
+        <h1 class="text-[24px] m-auto">Aktualni work</h1>
+        <div class="welkome__wrapper rounded-sm bg max-w-[420px]">
+          <a href="youtube.com"
+            ><img src="./public/welcome person no1 .svg" alt="person haead"
+          /></a>
+          <h3>Сделать дизайн интернет-магазина</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed
+            leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices
+            mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla
+            neque, interdum. At pharetra consectetur nec est convallis...
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

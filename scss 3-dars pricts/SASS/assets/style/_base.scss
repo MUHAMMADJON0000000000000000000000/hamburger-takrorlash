@@ -1,0 +1,33 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+}
+
+// button {
+//   border: none;
+//   background: none;
+// }
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  border-radius: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 1918px;
+  margin: 0 auto;
+}

@@ -1,0 +1,45 @@
+header {
+  background: url(../../assets/images/bg.jpg) top center no-repeat;
+  //   background-size: cover;
+}
+
+.nav {
+  padding: 57px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+  }
+
+  &__contact,
+  &__item {
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+
+    &--red {
+      color: red;
+    }
+  }
+}
+
+.hero {
+  height: 100vh;
+}
+
+.welcome {
+  display: flex;
+  &__img {
+    margin: 0 100px;
+  }
+}

@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.header_top {
+  background-color: #f0f2f5;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.header_left,
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.header_left i {
+  margin-right: 6px;
+}
+
+.location {
+  margin-right: 24px;
+}
+
+.header_right {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+}
+
+/* header middle started */
+
+.middle_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ietms,
+.enter,
+.collected,
+.cart {
+  display: flex;
+}
+
+.katalog {
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #e5e5ff;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.katalog p {
+  opacity: 1;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.08px;
+  text-align: center;
+  color: #7f4dff;
+}
+
+.form {
+  margin: 0 20px;
+  width: 527px;
+  height: 40px;
+  opacity: 1;
+  border: 1px solid #36374033;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form input,
+.form button {
+  border: none;
+  padding: 0 16px;
+}
+
+.form input {
+  outline: none;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #757575;
+  width: 100%;
+}
+
+.form button {
+  width: 79px;
+  height: 40px;
+  opacity: 1;
+  background-color: #36374033;
+}
+
+.ietms {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.enter,
+.collected,
+.cart {
+  display: flex;
+  gap: 5px;
+}
+
+.header_middle {
+  margin-top: 18px;
+}
+.header_bottom {
+  margin: 10px;
+}
+.header_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 24;
+  height: 24;
+  top: 7px;
+  opacity: 1;
+}

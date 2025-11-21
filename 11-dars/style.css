@@ -1,0 +1,24 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+.parent {
+  border: 3px solid red;
+  height: 1000px;
+  margin: 30px auto;
+  position: relative;
+  display: flex;
+}
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  background: blue;
+  width: 300px;
+  height: 500px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  /* position: absolute; */
+  /* z-index: 10; */
+}

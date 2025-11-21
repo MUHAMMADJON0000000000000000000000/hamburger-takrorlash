@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+  border: 1px solid goldenrod;
+  position: relative;
+}
+
+/* HEADER */
+
+.header {
+  background-color: #1c1c1c;
+  padding: 18px 0;
+  border-bottom: 1.5px solid #333;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items > li > a {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  padding: 16px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-number {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+
+.theme-toggler-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: none;
+  background: #272727;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-btn {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  padding: 18px 30px;
+  border: none;
+  background-color: #299764;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#welcome {
+  background-color: #1c1c1c;
+  padding: 18px 0;
+  border-bottom: 1.5px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.welcome__inner {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.welcome__img,
+img {
+  border-radius: 20px;
+}
+.welcome__inp > input {
+  position: absolute;
+  bottom: 140px;
+  padding: 10px;
+  width: 600px;
+  height: 66px;
+
+  left: 350px;
+  opacity: 1;
+  border-radius: 100px;
+}
+.welcome__inp > img {
+  margin: 0 120px;
+}
+.welcome_ul > .d {
+  max-width: 476px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 120px;
+  background-color: #299764;
+  text-align: center;
+  align-items: center;
+  margin: 0 350px;
+}
+.welcome_ul > li {
+  border-radius: 20;
+}

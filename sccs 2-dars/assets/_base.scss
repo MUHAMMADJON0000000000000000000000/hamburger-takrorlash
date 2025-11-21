@@ -1,0 +1,19 @@
+// bu yerga mana bu narsalar yoziladi
+*{
+  font-famly:sans-serif;
+  margin:0;
+}
+
+$color:red;
+
+
+
+span {
+  color:$color;
+}
+
+p{
+  $color:green !global;
+color:$color;
+}
+

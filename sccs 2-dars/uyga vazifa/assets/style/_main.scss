@@ -1,0 +1,438 @@
+// style.scss
+
+// Asosiy o'zgaruvchilar (Variables)
+$primary-color: #d62828; // Qizil rang
+$text-dark: #333;
+$text-light: #fff;
+$font-family: "Arial", sans-serif; // Haqiqiy shrift nomini o'zgartiring
+$max-width: 1200px;
+
+// Boshlang'ich uslublar (Reset/Base Styles)
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+  color: $text-dark;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+// --- Header Uslublari ---
+.header {
+  .top-bar {
+    background-color: #333;
+    font-size: 13px;
+    padding: 8px 0;
+    color: #fff;
+
+    .container {
+      display: flex;
+      justify-content: flex-end; // O'ng tomonga joylash
+      gap: 20px;
+
+      span,
+      a {
+        color: #e8e7e7;
+      }
+    }
+  }
+
+  .main-menu {
+    background-color: $text-dark;
+    color: $text-light;
+    padding: 15px 0;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      height: 30px;
+      filter: invert(1);
+    }
+
+    .nav-links ul {
+      display: flex;
+      gap: 30px;
+
+      a {
+        font-weight: 500;
+        padding: 5px 0;
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+          border-bottom: 2px solid $primary-color;
+        }
+      }
+    }
+
+    .icons {
+      display: flex;
+      gap: 15px;
+      font-size: 18px;
+    }
+  }
+}
+
+.hero-banner {
+  height: 60vh;
+  background-image: url("/assets/img/slide\ 1.png");
+  background-size: cover;
+  background-position: center top;
+  color: $text-light;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .hero-content {
+    z-index: 10;
+    padding-left: 20px;
+    max-width: 500px;
+
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .promo-box {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+
+    .red-box {
+      background-color: $primary-color;
+      padding: 15px 25px;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+}
+
+// --- Info Section  ---
+.info-section {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #fff;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #555;
+    margin-bottom: 40px;
+  }
+
+  .location-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 14px;
+    color: #999;
+    position: relative;
+    padding-bottom: 20px;
+
+    span {
+      cursor: pointer;
+      position: relative;
+      &:after {
+        content: "⌄";
+        margin-left: 5px;
+      }
+    }
+
+    .singapore-contact {
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-align: left;
+      padding: 20px;
+      border: 1px solid #ccc;
+      line-height: 1.8;
+      color: #333;
+      font-size: 14px;
+
+      p:first-child {
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: $text-dark;
+      }
+    }
+  }
+}
+
+// --- Catalog Section  ---
+.catalog-section {
+  padding: 40px 0 80px;
+
+  h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  .catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .catalog-item {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: $text-light;
+
+    // Har bir elementga turli fon rasmlari
+    &:nth-child(1) {
+      background-image: url("/assets/img/photo.png");
+    }
+    &:nth-child(2) {
+      background-image: url("/assets/img/photo@2x.png");
+    }
+    &:nth-child(3) {
+      background-image: url("accessories_3.jpg");
+    }
+
+    .item-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+      padding: 20px;
+    }
+
+    h4 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: $primary-color;
+      color: $text-light;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.additional-categories {
+  padding-top: 20px;
+  background-color: #fff;
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 50px;
+  }
+
+  .category-item {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: $text-light;
+    cursor: pointer;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      transition: background 0.3s;
+    }
+
+    &:hover::before {
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    &.manhattan-bg {
+      background-image: url("/assets/img/dark\ 1.png");
+    }
+    &.bone-crusher-bg {
+      background-image: url("/assets/img/Vector.png");
+    }
+    &.other-products-bg {
+      background-image: url("/assets/img/icon.svg");
+    }
+
+    .category-overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: 10;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+  }
+}
+
+.popular-products-section {
+  padding: 20px 0 80px;
+  background-color: #f7f7f7;
+
+  h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-left: 20px;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .product-card {
+    background-color: $text-light;
+    padding: 10px;
+    border: 1px solid #eee;
+    text-align: center;
+
+    &:nth-child(5) {
+      position: relative;
+      padding-bottom: 70px;
+    }
+
+    .product-image {
+      background-color: #f7f7f7;
+      padding: 20px;
+      margin-bottom: 15px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .product-image img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+    }
+
+    .name {
+      font-size: 14px;
+      color: $text-dark;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      font-size: 16px;
+      font-weight: 700;
+      color: $text-dark;
+      margin-bottom: 15px;
+    }
+
+    .add-to-cart-button {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $primary-color;
+      color: $text-light;
+      border: none;
+      padding: 15px 0;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+
+      i {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .products-grid,
+  .additional-categories .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid,
+  .additional-categories .category-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .header .main-menu .nav-links {
+    display: none;
+  }
+
+  .catalog-section .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-section .location-links {
+    flex-direction: column;
+    gap: 10px;
+    .singapore-contact {
+      position: static;
+      margin-top: 20px;
+    }
+  }
+}

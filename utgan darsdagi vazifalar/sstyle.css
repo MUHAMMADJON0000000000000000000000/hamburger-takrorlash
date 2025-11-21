@@ -1,0 +1,124 @@
+
+body {
+  background-color: #1b2838;
+  color: #c7d5e0; 
+  font-family: Arial, sans-serif; 
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center; 
+
+.game-list-container {
+  width: 800px; 
+  max-width: 100%;
+}
+
+
+.game-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a475e; 
+  padding: 15px 20px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border-left: 5px solid transparent;
+  transition: background-color 0.2s;
+}
+
+.game-item:hover {
+  background-color: #31516b; 
+}
+
+.game-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.game-info h2 {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.game-details {
+  font-size: 13px;
+  color: #8f98a0;
+}
+
+
+.rating {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.very-positive {
+  color: #66c0f4; 
+}
+
+.review-count {
+  color: #556772; 
+}
+
+
+  margin-bottom: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #304e6c; 
+  color: #a4d2ed; 
+  padding: 1px 6px;
+  margin-right: 5px;
+  border-radius: 2px;
+  font-size: 11px;
+  white-space: nowrap; 
+
+
+.platforms i {
+  font-size: 16px;
+  color: #556772;
+  margin-right: 8px;
+}
+
+
+.game-price-box {
+  text-align: right;
+  min-width: 80px; 
+}
+
+.price-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+
+.free-game .price-text {
+  color: #a0d14b; 
+}
+
+
+.release-date-item {
+  background-color: #2a475e;}
+
+.release-date {
+  font-size: 13px;
+  color: #a0d14b;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+
+.steam-deck-item {
+  background-color: #171a21; 
+  border-left-color: #3d6e98; 
+}
+
+.steam-deck-item .game-info h2 {
+  color: #ffffff;
+}
