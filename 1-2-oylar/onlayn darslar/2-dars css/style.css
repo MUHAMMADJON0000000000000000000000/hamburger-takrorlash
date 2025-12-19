@@ -125,4 +125,5 @@ body , h1, h3{
 .absalute{
     position: absolute;
     bottom: 0;
+    right: 0 ;
 }
