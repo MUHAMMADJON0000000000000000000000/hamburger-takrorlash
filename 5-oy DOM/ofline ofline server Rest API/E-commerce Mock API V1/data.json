@@ -1,0 +1,101 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "High-Performance Desktop Computer",
+      "category": "Computers",
+      "price": 1199.99,
+      "description": "A powerful desktop computer with the latest CPU, ideal for gaming and heavy-duty tasks.",
+      "image": "http://localhost:5000/images/cs1on5k0u44g6joqtfs0.jpg",
+      "stock": 50,
+      "rating": 4.8
+    },
+    {
+      "id": 2,
+      "name": "Portable Laptop for Professionals",
+      "category": "Computers",
+      "price": 849.99,
+      "description": "Lightweight and powerful, perfect for professionals on the go with long battery life.",
+      "image": "http://localhost:5000/images/cp4saa7j2e4ghqnrvhg0.jpg",
+      "stock": 75,
+      "rating": 4.6
+    },
+    {
+      "id": 3,
+      "name": "All-in-One Desktop Solution",
+      "category": "Computers",
+      "price": 999.99,
+      "description": "An all-in-one desktop with a large screen, ideal for home offices and casual use.",
+      "image": "http://localhost:5000/images/crbdkrs2gps3jqbeu1a0.jpg",
+      "stock": 30,
+      "rating": 4.4
+    },
+    {
+      "id": 4,
+      "name": "Gaming Laptop with High FPS",
+      "category": "Computers",
+      "price": 1399.99,
+      "description": "A gaming laptop with a high-refresh-rate display and dedicated GPU for smooth gaming experience.",
+      "image": "http://localhost:5000/images/cs9plkdpq3ghb2qjr420.jpg",
+      "stock": 20,
+      "rating": 4.7
+    },
+    {
+      "id": 5,
+      "name": "Compact Mini PC",
+      "category": "Computers",
+      "price": 399.99,
+      "description": "A compact mini PC that saves space and delivers efficient performance for everyday tasks.",
+      "image": "http://localhost:5000/images/csh4cdjvgbkl7nommhh0.jpg",
+      "stock": 60,
+      "rating": 4.3
+    },
+    {
+      "id": 6,
+      "name": "Workstation Laptop for Designers",
+      "category": "Computers",
+      "price": 1799.99,
+      "description": "A high-end workstation laptop designed for design professionals and 3D modeling.",
+      "image": "http://localhost:5000/images/cs4ai0ufh2vj1qtjs1v0.jpg",
+      "stock": 15,
+      "rating": 4.9
+    },
+    {
+      "id": 7,
+      "name": "Entry-Level Desktop Computer",
+      "category": "Computers",
+      "price": 499.99,
+      "description": "An affordable desktop PC, perfect for basic computing and everyday use.",
+      "image": "http://localhost:5000/images/cshnbkrvgbkipf21j9bg.jpg",
+      "stock": 90,
+      "rating": 4.1
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "address": "123 Main St, Springfield, IL",
+      "date": "2023-11-01",
+      "status": "Completed",
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        },
+        {
+          "productId": 2,
+          "quantity": 2
+        }
+      ],
+      "total": 199.99
+    }
+  ],
+  "admins": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "johndoe@example.com",
+      "password": "$2a$12$3aXsIBbnjO/dkF9omAN9VOs4rED0bda.TSRiD4O4FmqxTBjjdN4hi"
+    }
+  ]
+}

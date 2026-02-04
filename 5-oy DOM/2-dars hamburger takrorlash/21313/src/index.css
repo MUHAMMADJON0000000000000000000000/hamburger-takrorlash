@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hid-item {
+  @apply hidden;
+}
+
+
+.activate-hum-menu {
+    @apply right-[0vw];
+}
