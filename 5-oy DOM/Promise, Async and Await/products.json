@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15 Pro Max",
+    "price": 16295000,
+    "image": "iphone.png"
+  },
+  {
+    "id": 2,
+    "name": "Samsung A17",
+    "price": 2419000,
+    "image": ""
+  }
+]
