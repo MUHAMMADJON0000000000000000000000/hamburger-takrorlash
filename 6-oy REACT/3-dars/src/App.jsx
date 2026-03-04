@@ -1,29 +1,24 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import "./assets/img/logo_krepair.svg";
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
+import Advantages from "./components/Advantages";
+import Reviews from "./components/Reviews";
+import ContactForm from "./components/ContactForm";
+import MapSection from "./components/MapSection";
+import Footer from "./components/Footer";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+export default function App() {
   return (
-    <>
-      <div className="nav">
-        <img src="./asser" alt="" />
-        <img src="./asser" alt="" />
-
-        <ul>
-          <li>Услуги</li>
-          <li>Прайс-лист</li>
-          <li>O компании</li>
-          <li>Контакты</li>
-        </ul>
-
-        <a href="#nubers">+7 499 226 29 28</a>
-      </div>
-    </>
+    <div className="min-h-screen">
+      <Navbar />
+      <Hero />
+      <Services />
+      <Advantages />
+      <Reviews />
+      <ContactForm />
+      <MapSection />
+      <Footer />
+    </div>
   );
 }
-
-export default App;

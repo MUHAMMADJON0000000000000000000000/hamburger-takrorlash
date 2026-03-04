@@ -1,28 +1,16 @@
-import React, { useEffect, useRef, useState } from "react";
-
+import React from "react";
+import Products from "./components/Products";
+import Time from "./components/Time";
+// import Realtime from "./components/Realtime";//////
+//shu nimagadur ishlamadi sababini bilmadim, lekin vaqtni korsatadigan componentni ishlatdim
+import Realtime from "./components/RealTime";
 const App = () => {
-  let [products, setProducts] = useState([]);
-
-  async function getPrs() {
-    try {
-      const res = await fetch("https://dummyjson.com/products?limit=5");
-      const data = await res.json();
-      console.log(data);
-      setProducts(data.products);
-    } catch (err) {
-      console.log("erosdklnlksdn", err);
-    }
-  }
-  useEffect(() => {});
-
   return (
     <div>
-      <ul>
-        {" "}
-        {products?.map((item) => (
-          <li key={item.id}>{item.title}</li>
-        ))}
-      </ul>
+      <Products />
+      <Time />
+      <Realtime />
     </div>
   );
 };
+export default App;
