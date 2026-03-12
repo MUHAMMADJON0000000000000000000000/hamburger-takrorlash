@@ -1,4 +1,5 @@
 import React from "react";
+
 import ServiceCard from "./ServiceCard";
 import TV from "../assets/img/electo.png";
 import Audio from "../assets/img/phone.png";
@@ -23,7 +24,7 @@ function Services() {
         <ServiceCard
           title="Ремонт фото/видео техники"
           description="Осуществляем ремонт современной цифровой техники..."
-          image={Camera}
+          image={TV}
         />
 
         <ServiceCard
